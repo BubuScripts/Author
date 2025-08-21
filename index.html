@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Visiting Card</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset + Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefae0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card {
+      background: #dda15e;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      transition: 0.6s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.08);
+    }
+
+    .card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .card h5 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1rem;
+      background: #fefae0;
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+
+    ul li {
+      background: #fefae0;
+      color: #000;
+      margin: 0.6rem 0;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      text-align: left;
+      transition: 0.3s ease;
+      word-wrap: break-word;
+    }
+
+    ul li:hover {
+      transform: scale(1.02);
+      background: #ffe8c4;
+    }
+
+    ul li b {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      padding: 4px 6px;
+      border-radius: 6px;
+      transition: 0.3s ease;
+      word-break: break-all;
+    }
+
+    a:hover {
+      background: #bc6c25;
+      color: #fff;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.5rem;
+      }
+      .card img {
+        width: 120px;
+        height: 120px;
+      }
+      .card h3 {
+        font-size: 1.3rem;
+      }
+      ul li {
+        font-size: 0.85rem;
+        padding: 8px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card {
+        max-width: 420px;
+        padding: 2.5rem;
+      }
+      .card h3 {
+        font-size: 2rem;
+      }
+      ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="WhatsApp Image 2025-08-21 at 21.28.07_cc23bcb6.jpg" alt="Profile">
+    <h3>Deepak Nishad</h3>
+    <h5>Contact Me</h5>
+    <ul>
+      <li><b>Phone:</b> <a href="tel:9098331397">9098331397</a></li>
+      <li><b>Email:</b> <a href="mailto:deepaknishad1225@gmail.com">deepaknishad1225@gmail.com</a></li>
+      <li><b>Location:</b> Bilaspur, Chhattisgarh, India</li>
+    </ul>
+  </div>
+
+</body>
+</html>
